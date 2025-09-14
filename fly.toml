@@ -1,0 +1,9 @@
+app = "aternos-bot"  # 好きなアプリ名（Flyで一意になる必要あり）
+primary_region = "nrt"
+
+[build]
+  builder = "paketobuildpacks/builder:base"
+
+[[services]]
+  internal_port = 8080
+  processes = ["app"]
