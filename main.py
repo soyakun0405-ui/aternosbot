@@ -31,4 +31,9 @@ async def stop(ctx):
     srv.stop()
     await ctx.send("✅ サーバーを停止しました！")
 
+@bot.command()
+async def ping(ctx):
+    await ctx.send("pong! 🏓")
+
+
 bot.run(TOKEN)
